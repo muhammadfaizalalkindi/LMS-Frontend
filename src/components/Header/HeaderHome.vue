@@ -21,7 +21,7 @@
           </div>
 
           <div class="flex flex-1 items-center justify-center text-center sm:items-stretch sm:justify-start ">
-            <div class=" flex space-x-2  items-center justify-center">
+            <div class=" flex space-x-2 ga-1 gap-2  items-center justify-center">
               <img class="h-12 w-auto" src="@/assets/logo.png" alt="Your Company">
               <p class="text-xl font-bold text-black">EduNess</p>
             </div>
@@ -42,10 +42,10 @@
             <!-- view Sign-in and Sign-up buttons in web-->
             <div v-if="!isLoggedIn" class="flex space-x-4">
               <router-link :to="{ name: 'RegistrasiPage' }"
-                class="shadow-md rounded-full  items-center cursor-pointer px-4 py-2 hover:bg-blue-500 hover:text-white"
+                class="shadow-md rounded-full  items-center cursor-pointer px-4 py-2 hover:bg-primary hover:text-white"
                 :class="{ 'bg-blue-500': activePage === '' }" aria-current="page">Sign-up</router-link>
               <router-link :to="{ name: 'LoginPage' }"
-                class="bg-blue-500 text-white rounded-full px-4 py-2 text-base font-sm hover:bg-blue-600"
+                class="btn-primary rounded-full px-4 py-2 text-base font-sm "
                 aria-current="page" :class="{ 'bg-blue-500': activePage === 'LoginPage' }">Sign-in</router-link>
             </div>
           </div>
@@ -73,11 +73,11 @@
       <div v-if="!isLoggedIn" class="px-4">
         <div class="flex space-x-4 justify-center ">
           <router-link :to="{ name: 'RegistrasiPage' }"
-            class="shadow-md rounded-md px-4 py-2 items-center cursor-pointer hover:bg-blue-500 hover:text-white"
-            :class="{ 'bg-blue-500': activePage === '' }" aria-current="page">Sign-up</router-link>
+            class="shadow-md rounded-md px-4 py-2 items-center cursor-pointer hover:bg-primary hover:text-white"
+            :class="{ 'bg-primary': activePage === '' }" aria-current="page">Sign-up</router-link>
           <router-link :to="{ name: 'LoginPage' }"
-            class="bg-blue-500 text-white rounded-md px-4 py-2 text-base font-sm hover:bg-blue-600" aria-current="page"
-            :class="{ 'bg-blue-500': activePage === 'LoginPage' }">Sign-in</router-link>
+            class="btn-primary rounded-md px-4 py-2 text-base font-sm" aria-current="page"
+            :class="{ 'bg-primary': activePage === 'LoginPage' }">Sign-in</router-link>
         </div>
       </div>
     </div>

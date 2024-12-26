@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --color-primary: #F9D100;
+        --color-secondary: #564FFD;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary text-white hover:bg-primary-dark;
+    }
+    .btn-primary.tonal {
+        @apply bg-primary-light text-primary hover:bg-primary hover:text-white;
+    }
+    .btn-secondary {
+        @apply bg-secondary text-white;
+    }
+    .btn-secondary.tonal {
+        @apply bg-secondary-light text-secondary hover:bg-secondary hover:text-white;
+    }
+}
