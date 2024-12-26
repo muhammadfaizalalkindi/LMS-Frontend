@@ -30,7 +30,7 @@
               
                 <!-- Menggunakan method openCourse saat tombol diklik -->
                 <button @click="openCourse(course.id)"
-                  class="rounded-md w-full bg-blue-200 hover:bg-blue-500 hover:text-white text-[#564FFD] py-2 px-4 shadow-md transition-colors duration-200 font-semibold text-sm">
+                  class="rounded-md w-full btn-primary tonal py-2 px-4 transition-colors duration-200 font-semibold text-sm">
                   Continue
                 </button>
               </div>         

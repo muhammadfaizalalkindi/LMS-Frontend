@@ -28,8 +28,8 @@
         <!-- menu sidebar -->
         <div class="overflow-y-scroll" style="scrollbar-width: none; -ms-overflow-style: none;">
           <div class="text-gray-700">
-            <router-link to="/user/dashboard" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-              :class="{ 'bg-blue-500': activePage === 'dashboard' }">
+            <router-link to="/user/dashboard" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'dashboard' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,8 +37,8 @@
               </svg>
               Dashboard
             </router-link>
-            <router-link to="/user/myclass" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-              :class="{ 'bg-blue-500': activePage === 'MyClass' }">
+            <router-link to="/user/myclass" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'MyClass' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
                 <path stroke-divnecap="round" stroke-divnejoin="round"
@@ -47,8 +47,8 @@
               My Program
             </router-link>
             
-            <router-link to="/browser" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-              :class="{ 'bg-blue-500': activePage === 'BrowseProgram' }">
+            <router-link to="/browser" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'BrowseProgram' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -57,8 +57,8 @@
               Browser Program
             </router-link>
 
-            <router-link to="/user/setting" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-              :class="{ 'bg-blue-500': activePage === 'SettingPage' }">
+            <router-link to="/user/setting" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'SettingPage' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -68,8 +68,8 @@
               Settings
             </router-link>
             
-            <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-              :class="{ 'bg-blue-500': activePage === 'SignOut' }">
+            <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'SignOut' }">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-4">
                 <path fill-rule="evenodd"
                   d="M7.5 3.75A1.5 1.5 0 0 0 6 5.25v13.5a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5V15a.75.75 0 0 1 1.5 0v3.75a3 3 0 0 1-3 3h-6a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3V9A.75.75 0 0 1 15 9V5.25a1.5 1.5 0 0 0-1.5-1.5h-6Zm10.72 4.72a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 1 1-1.06-1.06l1.72-1.72H9a.75.75 0 0 1 0-1.5h10.94l-1.72-1.72a.75.75 0 0 1 0-1.06Z"

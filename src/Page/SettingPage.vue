@@ -216,7 +216,7 @@ const handlePasswordCancel = () => {
                                 Cancel
                             </button>
                             <button
-                                class="flex justify-center rounded bg-blue-400 py-2 px-6 font-medium text-gray hover:bg-blue-500"
+                                class="flex justify-center rounded btn-primary py-2 px-6 font-medium"
                                 type="submit">
                                 Save
                             </button>
@@ -268,7 +268,7 @@ const handlePasswordCancel = () => {
                                 Cancel
                             </button>
                             <button
-                                class="flex justify-center rounded bg-blue-400 md:py-2 px-4 md:px-6 text-center items-center font-medium text-gray hover:bg-blue-500 text-sm sm:text-xs md:text-md lg:text-lg"
+                                class="flex justify-center rounded btn-primary md:py-2 px-4 md:px-6 text-center items-center font-medium text-sm sm:text-xs md:text-md lg:text-lg"
                                 type="submit">
                                 Save
                             </button>
@@ -319,7 +319,7 @@ const handlePasswordCancel = () => {
                                 Cancel
                             </button>
                             <button type="submit"
-                                class="flex justify-center rounded bg-blue-400 py-2 px-6 font-normal text-gray hover:bg-blue-500">
+                                class="flex justify-center rounded btn-primary py-2 px-6 font-normal text-gray">
                                 Change
                             </button>
                         </div>

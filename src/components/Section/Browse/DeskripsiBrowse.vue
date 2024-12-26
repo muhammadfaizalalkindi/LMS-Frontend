@@ -133,7 +133,7 @@
 
 
                     <div @click="openCourse" type="button"
-                        class="bg-blue-500 rounded-2xl my-4 mx-12 justify-center text-center items-center hover:bg-blue-600">
+                        class="btn-primary rounded-2xl my-4 mx-12 justify-center text-center items-center cursor-pointer">
                         <p class="text-md text-white font-medium py-2 px-1">Ikut</p>
                     </div>
 

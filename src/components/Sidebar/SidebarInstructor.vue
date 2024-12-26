@@ -29,8 +29,8 @@
                 <div class="overflow-y-scroll" style="scrollbar-width: none; -ms-overflow-style: none;">
                     <div class="text-gray-700">
                         <router-link to="/instructor/dashboard"
-                            class="flex items-center cursor-pointer p-4 pr-16  hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'dashboard' }">
+                            class="flex items-center cursor-pointer p-4 pr-16  hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'dashboard' }">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 mr-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -40,8 +40,8 @@
                         </router-link>
 
                         <router-link to="/instructor/programdosen"
-                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'ProgramDosen' }">
+                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'ProgramDosen' }">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 mr-4">
                                 <path stroke-divnecap="round" stroke-divnejoin="round"
@@ -51,14 +51,14 @@
                         </router-link>
 
                         <router-link to="/instructor/permintaan"
-                            class="flex items-center text-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'ProgramPermintaan' }">
+                            class="flex items-center text-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'ProgramPermintaan' }">
                             <i class="fa-regular fa-square-check w-5 h-5 mr-4"></i>
                             Permintaan
                         </router-link>
 
-                        <router-link to="/instructor/program" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'BuatProgram' }">
+                        <router-link to="/instructor/program" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'BuatProgram' }">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 mr-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -68,8 +68,8 @@
                         </router-link>
 
                         <router-link to="/instructor/createcourse"
-                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'CreateCourse' }">
+                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'CreateCourse' }">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 mr-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -78,8 +78,8 @@
                             Course
                         </router-link>
                         <router-link to="/instructor/setting"
-                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'SettingPage' }">
+                            class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'SettingPage' }">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5 mr-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -89,8 +89,8 @@
                             </svg>
                             Settings
                         </router-link>
-                        <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-blue-500"
-                            :class="{ 'bg-blue-500': activePage === 'SignOut' }">
+                        <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+                            :class="{ 'bg-primary': activePage === 'SignOut' }">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                 class="w-5 h-5 mr-4">
                                 <path fill-rule="evenodd"
