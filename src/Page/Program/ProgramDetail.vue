@@ -102,7 +102,7 @@
           </div>
 
 
-          <div @click="openCourse" type="button"
+          <div @click="registerProgram()" type="button"
             class="btn-primary rounded-2xl my-4 mx-12 justify-center text-center items-center cursor-pointer">
             <p class="text-md text-white font-medium py-2 px-1">Ikut</p>
           </div>
@@ -150,16 +150,21 @@
 
 <script setup>
 import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { getCourseById } from '@/api/course'
 
 const route = useRoute()
+const router = useRouter()
 
 const loading = ref(false)
 const course = ref(null)
 const error = ref(null)
 
 watch(() => route.params.id, fetchData, { immediate: true })
+
+function registerProgram() {
+  router.push({name: 'NotifBrowse', params: route.params})
+}
 
 async function fetchData(id) {
   console.log('fetch', id)

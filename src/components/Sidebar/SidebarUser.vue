@@ -16,7 +16,7 @@
 
         <!-- Logo-->
         <div class="p-4">
-          <div class="flex  justify-center items-center">
+          <div class="flex gap-2 justify-center items-center">
             <div>
               <img src="@/assets/logo.png" class="h-12" alt="Logo">
             </div>
@@ -46,8 +46,8 @@
               </svg>
               My Program
             </router-link>
-            
-            <router-link to="/browser" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+
+            <router-link to="/user/browser" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
               :class="{ 'bg-primary': activePage === 'BrowseProgram' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
@@ -67,7 +67,7 @@
               </svg>
               Settings
             </router-link>
-            
+
             <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
               :class="{ 'bg-primary': activePage === 'SignOut' }">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-4">

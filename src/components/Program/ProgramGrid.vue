@@ -18,7 +18,7 @@
                 <div class="border-t-2 border-gray-300 px-4 pt-2 items-center text-center">
                   <div class="flex space-x-2 text-gray-500 justify-end">
                     <div :class="{ 'text-gray-300': item.discount, 'line-through': item.discount }"
-                      class="text-gray-400 font-sans">{{ item.price }}</div>
+                      class="text-gray-400 font-sans">${{ item.price }}</div>
                     <div class="text-green-400">{{ item.discount }}</div>
                   </div>
                 </div>
