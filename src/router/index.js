@@ -31,6 +31,7 @@ import CardDosen from "@/components/Section/ProgramDosen/ProgramDosen.vue";
 import DeskripsiDosen from "@/components/Section/ProgramDosen/DeskripsiDosen.vue";
 import DetailPage from "@/components/Section/ProgramDosen/DetailPage.vue";
 import DetailPertemuan from "@/components/Section/ProgramDosen/DetailPertemuan.vue";
+import browseProgram from "./browseProgram";
 
 const routes = [
   { path: "/", name: "ClassUtama", component: ClassUtama },
@@ -47,37 +48,12 @@ const routes = [
         component: HomePage,
         meta: { title: "Dashboard" },
       },
+      browseProgram,
       {
         path: "/user/myclass",
         name: "MyClass",
         component: MyClass,
         meta: { title: "My Program" },
-      },
-      {
-        path: "/user/browser",
-        name: "BrowseProgram",
-        component: () => import('@/Page/Program/ProgramIndex.vue'),
-        meta: { title: "Browser" },
-        children: [
-          {
-            path: "",
-            name: "ListProgram",
-            component: () => import('@/Page/Program/ProgramList.vue'),
-            meta: { title: "Program" },
-          },
-          {
-            path: ":id",
-            name: "DetailProgram",
-            component: () => import('@/Page/Program/ProgramDetail.vue'),
-            meta: { title: "Detail Program" },
-          },
-          {
-            path: ":id/notif",
-            name: "NotifBrowse",
-            component: () => import('@/Page/Program/ProgramRegister.vue'),
-            meta: { title: "Program" },
-          },
-        ],
       },
       {
         path: "/myclass/:programId",
