@@ -27,24 +27,24 @@
                 <ProgressBar class="h-auto" :progress="course.progress" />
               </div>
               <div class="border-t-2 border-gray-300 px-4 pt-4 items-center text-center">
-                
+
                   <!-- Menggunakan method openCourse saat tombol diklik -->
                   <button @click="openCourse(course.id)"
-                    class="rounded-md w-full bg-blue-200 hover:bg-blue-500 hover:text-white text-[#564FFD] py-2 px-4 shadow-md transition-colors duration-200 font-semibold text-sm">
+                    class="rounded-md w-full btn-primary tonal py-2 px-4 shadow-md transition-colors duration-200 font-semibold text-sm">
                     Continue
                   </button>
-                </div>         
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </template>
-  
+
   <script>
   import course from '@/assets/course.png'
   import ProgressBar from '@/components/Progres/ProgressBio';
-  
+
   export default {
     name: 'ProgramCard',
     components: {
@@ -101,7 +101,7 @@
     },
   }
   </script>
-  
+
   <style scoped>
   /* Custom CSS untuk membatasi jumlah baris berdasarkan ukuran layar */
   @media (min-width: 1024px) {
@@ -109,17 +109,16 @@
       grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
-  
+
   @media (min-width: 768px) and (max-width: 1023px) {
     .grid {
       grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
-  
+
   @media (max-width: 767px) {
     .grid {
       grid-template-rows: repeat(3, minmax(0, 1fr));
     }
   }
   </style>
-  
