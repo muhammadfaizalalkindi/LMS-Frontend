@@ -90,7 +90,7 @@
 
 <script>
 
-import { login as loginPost, setToken } from '@/Service/Api'
+import { login as loginPost } from '@/Service/Api'
 import { useStorage } from '@vueuse/core';
 
 export default {
@@ -123,7 +123,6 @@ export default {
           const { token, role, id, name, email, phone_number, image } = data.data
           const userType = role ? role.toLowerCase() : null;
 
-          setToken(token)
           useStorage('auth-token', token)
           useStorage('auth-user', { role, id, name, email, phone_number, image})
 
