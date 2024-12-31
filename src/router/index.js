@@ -32,6 +32,7 @@ import DeskripsiDosen from "@/components/Section/ProgramDosen/DeskripsiDosen.vue
 import DetailPage from "@/components/Section/ProgramDosen/DetailPage.vue";
 import DetailPertemuan from "@/components/Section/ProgramDosen/DetailPertemuan.vue";
 import browseProgram from "./browseProgram";
+import myProgram from "./myProgram";
 
 const routes = [
   { path: "/", name: "ClassUtama", component: ClassUtama },
@@ -49,6 +50,7 @@ const routes = [
         meta: { title: "Dashboard" },
       },
       browseProgram,
+      myProgram,
       {
         path: "/user/myclass",
         name: "MyClass",

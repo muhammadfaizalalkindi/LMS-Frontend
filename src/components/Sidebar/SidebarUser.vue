@@ -37,8 +37,8 @@
               </svg>
               Dashboard
             </router-link>
-            <router-link to="/user/myclass" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
-              :class="{ 'bg-primary': activePage === 'MyClass' }">
+            <router-link to="/user/my-program" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'MyProgramIndex' }">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5 mr-4">
                 <path stroke-divnecap="round" stroke-divnejoin="round"
@@ -56,6 +56,15 @@
               </svg>
               Browser Program
             </router-link>
+
+            <!-- <router-link :to="{name: 'UserProject'}" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
+              :class="{ 'bg-primary': activePage === 'UserProject' }">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-5 h-5 mr-4" viewBox="0 0 16 16">
+                <path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"/>
+              </svg>
+              Project
+            </router-link> -->
 
             <router-link to="/user/setting" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-primary"
               :class="{ 'bg-primary': activePage === 'SettingPage' }">
