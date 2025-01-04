@@ -99,7 +99,7 @@
                             </svg>
                             Settings
                         </router-link>
-                        <router-link to="/" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-secondary hover:text-white"
+                        <div @click="logout" class="flex items-center cursor-pointer p-4 pr-4 hover:bg-secondary hover:text-white"
                             :class="{ 'bg-secondary text-white': activePage === 'SignOut' }">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                 class="w-5 h-5 mr-4">
@@ -108,7 +108,7 @@
                                     clip-rule="evenodd" />
                             </svg>
                             Sign Out
-                        </router-link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,6 +118,8 @@
 </template>
 
 <script>
+import { useAuthStore } from '@/Stores/auth';
+import { useRouter } from 'vue-router';
 
 export default {
     name: 'MainSidebar',
@@ -129,7 +131,17 @@ export default {
             pageTitle: 'Dashboard'
         };
     },
+    setup() {
+        const router = useRouter()
+        const store = useAuthStore()
 
+        return {
+            logout(){
+                store.destroy()
+                router.push('/login')
+            }
+        }
+    },
     computed: {
         isInstructor() {
             return this.userRole === 'instructor';

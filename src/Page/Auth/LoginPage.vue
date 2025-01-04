@@ -91,7 +91,7 @@
 <script>
 
 import { login as loginPost } from '@/Service/Api'
-import { useStorage } from '@vueuse/core';
+import { useAuthStore } from '@/Stores/auth';
 
 export default {
   data() {
@@ -122,9 +122,10 @@ export default {
 
           const { token, role, id, name, email, phone_number, image } = data.data
           const userType = role ? role.toLowerCase() : null;
+          const store = useAuthStore()
 
-          useStorage('auth-token', token)
-          useStorage('auth-user', { role, id, name, email, phone_number, image})
+          store.setToken(token)
+          store.setUser({ role, id, name, email, phone_number, image})
 
           if (userType === 'student' || userType === 'user') {
             this.$router.push('/user/dashboard');
