@@ -34,6 +34,7 @@ import DetailPertemuan from "@/components/Section/ProgramDosen/DetailPertemuan.v
 import browseProgram from "./browseProgram";
 import myProgram from "./myProgram";
 import projects from "./projects";
+import notification from "./notifications";
 
 const routes = [
   { path: "/", name: "ClassUtama", component: ClassUtama },
@@ -53,6 +54,7 @@ const routes = [
       browseProgram,
       myProgram,
       projects('user'),
+      notification('user'),
       {
         path: "/user/myclass",
         name: "MyClass",
@@ -97,6 +99,7 @@ const routes = [
         meta: { title: "Dashboard" },
       },
       projects('instructor'),
+      notification('instructor'),
       {
         path: "/instructor/program",
         name: "BuatProgram",

@@ -9,6 +9,7 @@ import { createPinia } from 'pinia';
 // global components
 import Modal from '@/components/Component/Modal.vue'
 import MultiSelect from './components/Form/MultiSelect.vue'
+import SingleSelect from './components/Form/SingleSelect.vue'
 import AvatarStack from './components/Component/AvatarStack.vue'
 
 const pinia = createPinia()
@@ -18,5 +19,6 @@ app.use(pinia)
 app.use(store);
 app.component('Modal', Modal)
 app.component('MultiSelect', MultiSelect)
+app.component('SingleSelect', SingleSelect)
 app.component('AvatarStack', AvatarStack)
 app.mount('#app');

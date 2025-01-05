@@ -9,6 +9,10 @@ export const useAuthStore = defineStore('auth', {
     AUTH_KEY: 'auth-user',
     AUTH_TOKEN: 'auth-token',
   }),
+  getters: {
+    isUser: (state) => state.user.role && state.user.role.toLowerCase() == 'user',
+    isInstructor: (state) => state.user.role && state.user.role.toLowerCase() == 'instructor',
+  },
   actions: {
     getCurrentUser() {
       const user = useStorage(this.AUTH_KEY)
