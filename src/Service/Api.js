@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export const getToken = () => {
-    return localStorage.getItem('authToken')
+    return localStorage.getItem('auth-token')
 }
 
 export const setToken = (token) => {
-    localStorage.setItem('authToken', token)
+    localStorage.setItem('auth-token', token)
 }
 
 const instance = axios.create({
@@ -15,9 +15,18 @@ const instance = axios.create({
     }
 })
 
-instance.interceptors.request.use(function(config) {
-    return config
-}, (error) => Promise.reject(error))
+// instance.interceptors.request.use(function(config) {
+//     return config
+// }, (error) => Promise.reject(error))
+
+// instance.interceptors.response.use(function(response) {
+//     return response
+// }, (error) => {
+//     if(error?.response?.data?.message == "Error verifying token: jwt malformed" ) {
+//       window.location.href = '/login'
+//     }
+//     return Promise.reject(error)
+// })
 
 export function login({email, password}) {
     return instance.post('auth/login', {email, password})

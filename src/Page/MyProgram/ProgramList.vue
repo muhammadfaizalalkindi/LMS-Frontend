@@ -1,11 +1,11 @@
 <template>
-  <component :is="viewComponent" :items="items" @selected="($event) => router.push(`browser/${$event.id}`)" />
+  <component :is="viewComponent" :items="items" @selected="($event) => router.push(`my-program/${$event.id}`)" />
 </template>
 
 <script setup>
-import ProgramGrid from '@/components/Program/ProgramGrid.vue'
+import ProgramGrid from '@/components/MyProgram/ProgramGrid.vue'
 import { computed, onMounted, ref } from 'vue'
-import { getCourses } from '@/api/course'
+import { getMyCourses } from '@/api/course'
 import { useRouter } from 'vue-router'
 
 const items = ref([])
@@ -25,7 +25,7 @@ onMounted(() => {
 
 function load() {
   loading.value = true
-  getCourses().then(res => {
+  getMyCourses().then(res => {
     if(res.status === 200) {
       items.value = res.data.data
     }

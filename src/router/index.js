@@ -32,6 +32,9 @@ import DeskripsiDosen from "@/components/Section/ProgramDosen/DeskripsiDosen.vue
 import DetailPage from "@/components/Section/ProgramDosen/DetailPage.vue";
 import DetailPertemuan from "@/components/Section/ProgramDosen/DetailPertemuan.vue";
 import browseProgram from "./browseProgram";
+import myProgram from "./myProgram";
+import projects from "./projects";
+import notification from "./notifications";
 
 const routes = [
   { path: "/", name: "ClassUtama", component: ClassUtama },
@@ -49,6 +52,9 @@ const routes = [
         meta: { title: "Dashboard" },
       },
       browseProgram,
+      myProgram,
+      projects('user'),
+      notification('user'),
       {
         path: "/user/myclass",
         name: "MyClass",
@@ -92,6 +98,8 @@ const routes = [
         component: HomePage,
         meta: { title: "Dashboard" },
       },
+      projects('instructor'),
+      notification('instructor'),
       {
         path: "/instructor/program",
         name: "BuatProgram",
